@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Lista de Tarefas</title>
+
+</head>
+
+<body>
+
+    <h1>Lista de Tarefas</h1>
+
+    <ul>
+
+        <th:block th:each="tarefa : ${x}">
+
+            <li th:text="${tarefa.descricao}"></li>
+
+        </th:block>
+
+    </ul>
+
+</body>
+
+</html>
